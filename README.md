@@ -17,7 +17,7 @@
 
 This repository aims to provide an updated version of sample code that uses Tellor by using Ethers.js, Waffle,and Hardhat.
 
-For more in-depth information about Tellor, check out our [documentation](https://app.gitbook.com/@tellor-2/s/tellor-docs/), [whitepaper](https://tellor.io/whitepaper/) and [FAQ](https://tellor.io/faq/) page.
+For more in-depth information about Tellor, check out our [website](https://tellor.io/).
 
 Quick references are included below:
 
@@ -32,8 +32,8 @@ git clone git@github.com:tellor-io/sampleUsingTellor.git
 npm install
 ```
 
-#### 2. How to Use
-Just inherit the UsingTellor contract, passing the Tellor address as a constructor argument:
+#### 2. Inherit Tellor Functions
+Just inherit the UsingTellor contract, passing the [Tellor Address](https://docs.tellor.io/tellor/integration/reference) as a constructor argument:
 
 Here's an example:
 ```solidity
@@ -65,11 +65,7 @@ contract PriceContract is UsingTellor {
   }
 }
 ```
-#### [Oracle Addresses](https://github.com/tellor-io/TellorCore):
 
-Mainnet **-**[ `0x88dF592F8eb5D7Bd38bFeF7dEb0fBc02cf3778a0`](https://etherscan.io/address/0x88dF592F8eb5D7Bd38bFeF7dEb0fBc02cf3778a0)
-
-Rinkeby **-**[ `0x88dF592F8eb5D7Bd38bFeF7dEb0fBc02cf3778a0`](https://rinkeby.etherscan.io/address/0x88dF592F8eb5D7Bd38bFeF7dEb0fBc02cf3778a0)
 
 #### 3. The sample contract `SampleUsingTellor` has access to the following Tellor functions:
 
@@ -178,21 +174,7 @@ For ease of use, the  `UsingTellor`  repo comes with a version of [Tellor Playgr
     function tipQuery(bytes32 _queryId, uint256 _amount, bytes memory _queryData) external;
 ```
 
-#### [Playground Addresses](https://github.com/tellor-io/TellorCore):
-
-Rinkeby: [`0x20374E579832859f180536A69093A126Db1c8aE9`](https://rinkeby.etherscan.io/address/0x20374E579832859f180536A69093A126Db1c8aE9#code)
-
-Kovan: [`0x20374E579832859f180536A69093A126Db1c8aE9`](https://kovan.etherscan.io/address/0x20374E579832859f180536A69093A126Db1c8aE9#code)
-
-Ropsten: [`0x20374E579832859f180536A69093A126Db1c8aE9`](https://ropsten.etherscan.io/address/0x20374E579832859f180536A69093A126Db1c8aE9#code)
-
-Goerli: [`0x20374E579832859f180536A69093A126Db1c8aE9`](https://goerli.etherscan.io/address/0x20374E579832859f180536A69093A126Db1c8aE9#code)
-
-BSC Testnet: [`0xbc2f9E092ac5CED686440E5062D11D6543202B24`](https://testnet.bscscan.com/address/0xbc2f9E092ac5CED686440E5062D11D6543202B24#code)
-
-Polygon Mumbai Testnet: [`0xbc2f9E092ac5CED686440E5062D11D6543202B24`](https://explorer-mumbai.maticvigil.com/address/0xbc2f9E092ac5CED686440E5062D11D6543202B24/contracts)
-
-Arbitrum Testnet: [`0xbc2f9E092ac5CED686440E5062D11D6543202B24`](https://explorer.arbitrum.io/#/address/0xbc2f9E092ac5CED686440E5062D11D6543202B24)
+#### [Playground Addresses](https://docs.tellor.io/tellor/integration/reference#playground)
 
 #### 5. To run tests:
 
@@ -211,9 +193,9 @@ npx hardhat run --network <your-network> scripts/deploy.js
 
 ### Useful Links
 
-Miner [Documentation](https://tellor.readthedocs.io/en/latest/MinerSetup/)
+Reporter [Documentation](https://docs.tellor.io/tellor/telliot/telliot)
 
-General Tellor Developer's [Documentation](https://tellor.readthedocs.io/en/latest/DevDocumentation/)
+General Tellor Developer's [Documentation](https://docs.tellor.io/tellor/integration/introduction)
 
 Metamask - www.metamask.io
 <br>
